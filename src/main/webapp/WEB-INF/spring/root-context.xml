@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="patientValidator" class="com.drugManufactoryAndManagement.spring.validator.PatientValidator"></bean>
+	
+	
+	<bean id="doctorValidator" class="com.drugManufactoryAndManagement.spring.validator.DoctorValidator"></bean>
+	
+	
+	<bean id="scientistValidator" class="com.drugManufactoryAndManagement.spring.validator.ScientistValidator"></bean>
+
+	
+	<bean id="drugManufactorValidator" class="com.drugManufactoryAndManagement.spring.validator.DrugManufactorValidator"></bean>
+
+	
+	<bean id="compoundManufactorValidator" class="com.drugManufactoryAndManagement.spring.validator.CompoundManufactorValidator"></bean>
+
+    
+    <bean id="patientDoctorInteractionValidator" class="com.drugManufactoryAndManagement.spring.validator.PatientDoctorInteractionValidator"></bean>
+    
+    <bean id="doctorScientistInteractionValidator" class="com.drugManufactoryAndManagement.spring.validator.DoctorScientistInteractionValidator"></bean>
+    
+    <bean id="drugManufactorScientistInteractionValidator" class="com.drugManufactoryAndManagement.spring.validator.DrugManufactorScientistInteractionValidator"></bean>
+    
+    <bean id="compoundDrugInteractionValidator" class="com.drugManufactoryAndManagement.spring.validator.CompoundDrugInteractionValidator"></bean>
+    
+    <bean id="userAccountDao" class="com.drugManufactoryAndManagement.spring.dao.UserAccountDAO" ></bean>
+    
+    <bean id="scientistDao" class="com.drugManufactoryAndManagement.spring.dao.ScientistDAO" ></bean>
+    
+    <bean id="roleDao" class="com.drugManufactoryAndManagement.spring.dao.RoleDAO" ></bean>
+    
+    <bean id="patientDoctorInteractionDao" class="com.drugManufactoryAndManagement.spring.dao.PatientDoctorInteractionDAO" ></bean>
+    
+    <bean id="patientDao" class="com.drugManufactoryAndManagement.spring.dao.PatientDAO" ></bean>
+    
+    <bean id="drugManufactorScientistInteractionDao" class="com.drugManufactoryAndManagement.spring.dao.DrugManufactorScientistInteractionDAO" ></bean>
+    
+    <bean id="drugManufactorDao" class="com.drugManufactoryAndManagement.spring.dao.DrugManufactorDAO" ></bean>
+    
+    <bean id="doctorScientistInteractionDao" class="com.drugManufactoryAndManagement.spring.dao.DoctorScientistInteractionDAO" ></bean>
+    
+    <bean id="doctorDao" class="com.drugManufactoryAndManagement.spring.dao.DoctorDAO" ></bean>
+    
+    <bean id="compoundManufactorDao" class="com.drugManufactoryAndManagement.spring.dao.CompoundManufactorDAO" ></bean>
+    
+    <bean id="compoundDrugInteractionDao" class="com.drugManufactoryAndManagement.spring.dao.CompoundDrugInteractionDAO" ></bean>
+</beans>
